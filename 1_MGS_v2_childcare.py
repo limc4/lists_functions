@@ -3,7 +3,7 @@ Program for child day-care centre - version 1 - main function
 created by Charlotte"""
 
 def drop_off():
-    name_ = input("Please enter the name of the child: ")
+    name_ = input("Please enter the name of the child: ").title()
     roll.append(name_)
     print(f"\n{name_} has been added to the roll.\n")
 
