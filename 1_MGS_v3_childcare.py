@@ -8,20 +8,16 @@ created by Charlotte"""
 #     print(f"\n{name_} has been added to the roll.\n")
 
 def pick_up():
-    child_ = ""
-    while not child_:
-        child_ = input("Please enter the name of the child: ").title()
-        if child_ in roll:
-            # see link Jade sent for finding index
-            roll.pop()
-            print()
-            print(f"{child_} has been removed from the roll")
-        else:
-            print("That child doesn't seem to be in the roll.")
-            child_ = input("Please check spelling, or enter another name: ").title()
+    valid = at_childcare
+    child_ = input("Please enter the name of the child: ").title()
+    while child_ not in valid:
+        print("\nThat child doesn't seem to be in the roll. ")
+        child_ = input("Please check spelling, or enter another name: ").title()
+    at_childcare.append(child_)
+    print(f"{child_} has been picked up.")
 
 ## Main routine
-roll = ["Jeremy", "Chloe"]
+at_childcare = ["Jeremy", "Chloe"]
 # choice = 0
 #
 # while choice != 5:
