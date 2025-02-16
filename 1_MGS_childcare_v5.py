@@ -1,5 +1,6 @@
 """MGS Childcare
 Program for child day-care centre - version 1 - function to calculate cost included
+print roll function
 created by Charlotte
 """
 
@@ -15,7 +16,6 @@ def pick_up():
         print("\nThat child doesn't seem to be in the roll. ")
         child_ = input("Please check spelling, or enter another name: ").title()
     at_childcare.pop(at_childcare.index(child_))
-    print(at_childcare)
     print(f"{child_} has been picked up.")
 
 def calc_cost():
@@ -24,8 +24,14 @@ def calc_cost():
     cost_ = len(at_childcare) * hours_ * cost_hours
     print(f"The cost for looking after {len(at_childcare)} children for {hours_} hours is ${cost_}")
 
+def print_roll():
+    print("Children present at MGS Childcare:")
+    for child_ in at_childcare:
+        print(child_)
+    print()
+
 # Main routine
-at_childcare = ["Jeremy", "Chloe"]
+at_childcare = []
 choice = 0
 
 while choice != 5:
@@ -35,6 +41,8 @@ while choice != 5:
     print()
     print("1 Drop off a child")
     print("2 Pick up a child")
+    print("3 Calculate cost of children present")
+    print("4 Print current roll")
     print()
     choice = int(input("Enter your choice (number from 1 to 5): "))
     print()
@@ -46,6 +54,6 @@ while choice != 5:
     elif choice == 3:
         calc_cost()
     elif choice == 4:
-        pass
+        print_roll()
     else:
         print("Goodbye")
