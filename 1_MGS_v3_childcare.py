@@ -1,5 +1,5 @@
 """MGS Childcare
-Program for child day-care centre - version 1 - main function
+Program for child day-care centre - version 1 - pick up function
 created by Charlotte"""
 
 # def drop_off():
@@ -9,11 +9,12 @@ created by Charlotte"""
 
 def pick_up():
     valid = at_childcare
-    child_ = input("Please enter the name of the child: ").title()
+    child_ = input("Please enter the name of the child you wish to pick up: ").title()
     while child_ not in valid:
         print("\nThat child doesn't seem to be in the roll. ")
         child_ = input("Please check spelling, or enter another name: ").title()
-    at_childcare.append(child_)
+    at_childcare.pop(at_childcare.index(child_))
+    print(at_childcare)
     print(f"{child_} has been picked up.")
 
 ## Main routine
