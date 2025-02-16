@@ -1,5 +1,5 @@
 """MGS Childcare
-Program for child day-care centre - version 1 - pick up function included
+Program for child day-care centre - version 4 - pick up function included
 function to calculate cost
 created by Charlotte
 """

@@ -1,5 +1,5 @@
 """MGS Childcare
-Program for child day-care centre - version 1 - function to calculate cost included
+Program for child day-care centre - version 5 - function to calculate cost included
 print roll function
 created by Charlotte
 """

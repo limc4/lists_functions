@@ -1,5 +1,5 @@
 """MGS Childcare
-Program for child day-care centre - version 1 - main function
+Program for child day-care centre - version 2 - main function
 created by Charlotte"""
 
 def drop_off():
