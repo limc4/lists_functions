@@ -1,5 +1,5 @@
 """Silent Auction
-Program to take care of a silent auction - v1
+Program to take care of a silent auction - v2
 getting started - check if bid is higher than the highest bid
 Created by Charlotte"""
 
