@@ -3,8 +3,6 @@ Program to keep track of absences of employees - v5
 function to find people with more days absent than average
 Created by Charlotte"""
 
-# at_childcare.index(child_)
-
 def average_absent():
     average_days = sum(employee_days) / len(employee_days)
     print(f"Average number of days staff were absent: {average_days:.2f} days")
@@ -34,8 +32,6 @@ def list_no_absent():
         absences = int(absences)
         if absences == 0:
             result = [f"{first} {last}"]
-    # alphabetical = sorted(result)
-    # print(alphabetical)
             all_0.append(result)
 
     print("\nemployees with no absences:")

@@ -1,6 +1,6 @@
 """Speeding motorists and warrants
-Program to calculate fines for speeders - v3
-print all fines and people names
+Program to calculate fines for speeders - v4
+total number of fines + fine amount
 Created by Charlotte"""
 
 def calc_fine():
@@ -32,13 +32,6 @@ def check_wanted(question):
         print(f"{name_.capitalize()} - WARRANT TO ARREST")
     return name_
 
-def print_fines():
-    number = 0
-    for i in people:
-        number += 1
-        print(f"{number}) Name: {i} Amount fined: {fines[people.index(i)]}")
-
-
 # Main routine
 total_fines = 0
 total_fine_amount = 0
@@ -58,5 +51,5 @@ while True:
     total_fines += 1
 print(f"Total fines: {total_fines}")
 print(f"Total fine amount: ${total_fine_amount}")
-print_fines()
+
 

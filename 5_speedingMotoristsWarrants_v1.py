@@ -1,5 +1,5 @@
 """Speeding motorists and warrants
-Program to calculate fines for speeders
+Program to calculate fines for speeders - v1
 get name and speed and calculate fine
 Created by Charlotte"""
 
