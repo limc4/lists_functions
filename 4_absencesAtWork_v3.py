@@ -1,13 +1,19 @@
 """Absences at Work
-Program to keep track of absences of employees - v2
-function to find average number of days staff absent
+Program to keep track of absences of employees - v3
+function to find person with most days absent
 Created by Charlotte"""
 
 # at_childcare.index(child_)
 
 def average_absent():
     average_days = sum(employee_days) / len(employee_days)
-    print(f"Average number of days staff were absent: {average_days}")
+    print(f"Average number of days staff were absent: {average_days:.1f}")
+
+def person_most_absent():
+    most_days = max(employee_days)
+    index = employee_days.index(most_days)
+    person = employee_names_joined[index]
+    print(f"Person with most days absent: {person} with {most_days} days")
 
 # Main routine
 employee_names_unjoined = []
@@ -31,3 +37,4 @@ while True:
     print(employee_days)
     employee_names_unjoined.clear()
 average_absent()
+person_most_absent()
